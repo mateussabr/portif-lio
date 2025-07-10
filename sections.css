@@ -1,0 +1,248 @@
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+
+    & > nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2.86rem 10rem;
+
+        & > div.profile{
+            display: flex;
+            gap: 4.209rem;
+            align-items: center;
+            
+
+            & > p{
+                color: var(--title-color);
+                transition: color 0.2s ease;
+
+                &:hover{
+                    color: var(--color-primary);
+                }
+            }
+        }
+        
+        & > ul{
+            display: flex;
+            align-items: center;
+            gap: 4.209rem;
+            
+            & > a{
+                color: var(--title-color);
+                text-decoration: none;
+   
+
+                & > li{
+                    transition: color 0.15s ease-in-out;
+                    &:hover{
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+    }
+}   
+
+main{
+    & > section.home{
+        height: calc(100vh - 85.53px);
+        background: linear-gradient(rgba(245,245,245,0.7), rgba(245,245,245,0.7)), url('https://www.rammaheshwari.com/assets/svg/common-bg.svg');
+        background-size: cover; 
+        background-position: center;
+        background-repeat: no-repeat; 
+        position: relative;
+
+        & > div.social-media{
+            width: 6.25rem;
+            height: 20rem;
+            background-color: white;
+            padding: 1.777rem 0;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1.777rem;
+
+            & > a{
+                div{
+                width: 85% ;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                transition: background-color 0.2s ease;
+
+                &:hover{
+                    background-color: var(--background-color-tertiary);
+                }
+
+                & > img{
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+            } 
+        }
+
+        & > div.container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            gap : 5.61rem;
+
+            & > div.presentation{
+                display: flex;
+                flex-flow: column;
+                gap: 3.157rem;
+                align-items: center;
+
+                & > p{
+                    text-align: center;
+                    font-size: 2.369rem;
+                }
+            }
+        }
+    }
+
+    & > section.about{
+        background-color: var(--background-color-primary);
+
+        div.container{
+            display: flex;
+            flex-flow: column;
+            gap: 8.5rem;
+
+            & > div.additional-information{
+                display: flex;
+                gap:  10rem;
+
+                & > div.know-me{
+                    flex: 1;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 3.157rem;
+                    align-items: center;
+
+                    & > a.button{
+                        align-self: self-start;
+                    }
+
+                    & > div.paragraphs{
+                        display: flex;
+                        flex-flow: column;
+                        gap: 2.369rem;
+                    }
+
+                    & > h3{
+                        align-self: self-start;
+                    }
+                }
+
+                & > div.skill{
+                    flex: 1;
+                    display: flex;
+                    flex-flow: column;
+                    gap: 3.157rem;
+
+                    & > div.box-skills{
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-auto-rows: 5.61rem;
+                        gap: 2rem;
+
+                        & > div{
+                            background-color: var(--background-color-secondary);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 3.17rem;
+                            padding: 1.77rem 1.44rem;
+                            transition: transform 0.2s ease;
+
+                            &:hover{
+                                background-color: var(--paragraph-color);
+                                color: white;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    & > section.projects{
+        background-color: var(--background-color-secondary);
+        height: auto;
+
+        & > div.container{
+            display: flex;
+            flex-flow: column;
+            gap: 20rem; 
+
+            & > .box-projects{
+                display: flex;
+                flex-flow: column;
+                gap: 15rem;
+
+                & > div.project{
+                    display: flex;
+                    gap: 10rem;
+
+
+                    & > div.photo{
+                        & > img{
+                            width: 50rem;
+                            height: 30rem;
+                        }
+                    }
+
+                    & > div.explanation{
+                        display: flex;
+                        flex-flow: column;
+                        align-items: start;
+                        gap: 4.209rem;
+
+                        & > div{
+                            display: flex;
+                            flex-flow: column;
+                            gap: 2.369rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: black;
+    padding: 4.209rem;
+    
+    & p{
+        color: white;
+    }
+
+    & > div.container{
+        padding: 3.157rem 0;
+        border-bottom: 0.1rem solid white;
+        display: flex;
+        gap: 3.157rem;
+        justify-content: space-between;
+
+       
+    }
+}
