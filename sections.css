@@ -108,7 +108,8 @@ main{
                 gap: 3.157rem;
                 align-items: center;
 
-                & > p{
+                & > p.sub{
+                    padding: 0 4rem;
                     text-align: center;
                     font-size: 2.369rem;
                 }
@@ -244,5 +245,134 @@ footer{
         justify-content: space-between;
 
        
+    }
+} 
+
+/* Adicione isso no final do arquivo sections.css */
+
+/* Telas grandes */
+@media (max-width: 1300px) {
+    main > section.home > div.container {
+        width: 90%;
+    }
+    
+    main > section.projects > div.container > .box-projects > div.project {
+        gap: 5rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+    header > nav {
+        padding: 2rem 5rem;
+    }
+    
+    main > section.home > div.social-media {
+        width: 5rem;
+        height: 15rem;
+    }
+    
+    main > section.about div.container > div.additional-information {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    main > section.projects > div.container {
+        gap: 10rem;
+    }
+    
+    main > section.projects > div.container > .box-projects {
+        gap: 10rem;
+    }
+    
+    main > section.projects > div.container > .box-projects > div.project {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    footer > div.container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+/* Tablets pequenos e celulares grandes */
+@media (max-width: 768px) {
+    header > nav {
+        padding: 1.5rem 2rem;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    header > nav > ul {
+        gap: 4rem;
+        justify-content: center;
+    }
+    
+    main > section.home > div.social-media {
+        display: none;
+    }
+    
+    main > section.home > div.container {
+        padding: 0 2rem;
+    }
+    
+    main > section.about div.container {
+        gap: 5rem;
+    }
+    
+    main > section.about div.container > div.additional-information > div.skill > div.box-skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    main > section.projects > div.container > .box-projects > div.project > div.photo > img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+    header > nav {
+        padding: 1rem;
+    }
+    
+    header > nav > ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    main > section.home > div.container > div.presentation > h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    main > section.about div.container > div.additional-information > div.know-me > a.button {
+        align-self: center;
+    }
+    
+    main > section.about div.container > div.additional-information > div.skill > div.box-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    footer {
+        padding: 2rem;
+    }
+    
+    footer > div.container {
+        padding: 2rem 0;
+    }
+}
+
+/* Orientação paisagem */
+@media (max-height: 500px) and (orientation: landscape) {
+    section {
+        height: auto;
+        padding: 3rem 0;
+    }
+    
+    main > section.home {
+        height: auto;
+        padding-top: 5rem;
     }
 }
