@@ -25,7 +25,7 @@ body{
 
 h1{
     font-size: 5.61rem;
-    line-height: 1.2
+    line-height: 1.2;
 }
 
 h2{
@@ -99,161 +99,77 @@ a.button{
     }
 }
 
+/* Adicione isso no final do arquivo default.css */
+
+/* Breakpoints ajustados */
 @media (max-width: 1300px) {
     div.container {
         width: 90%;
     }
 }
 
+/* Tablets */
 @media (max-width: 1024px) {
     :root {
         font-size: 58%;
     }
-
-    header > nav {
-        padding: 2rem 5rem;
-    }
-
-    main > section.home > div.container {
-        gap: 4rem;
-    }
-
-    main > section.about div.container > div.additional-information {
-        gap: 5rem;
-        flex-direction: column;
-    }
-
-    main > section.projects > div.container > .box-projects > div.project {
-        flex-direction: column;
-        gap: 5rem;
-    }
-
-    main > section.projects > div.container > .box-projects > div.project > div.photo > img {
-        width: 100%;
+    
+    section {
+        padding: 4rem 0;
         height: auto;
+    }
+    
+    div.subtitle > h2::after {
+        width: 25%;
+    }
+    
+    a.button {
+        padding: 1.5rem 3rem;
     }
 }
 
+/* Tablets pequenos e celulares grandes */
 @media (max-width: 768px) {
     :root {
-        font-size: 48%;
+        font-size: 55%;
     }
-
-    header > nav {
-        padding: 2rem 3rem;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    div.photo{
-        display: flex;
-        justify-content: center;
-    }
-
-    p.sub{
-        padding: 6rem;
-    }    
-
-    header > nav > div.profile {
-        justify-content: center;
-    }
-
-    header > nav > ul {
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2rem;
-    }
-
-    main > section.home > div.social-media {
-        width: 100%;
-        height: 6rem;
-        flex-direction: row;
-        top: auto;
-        bottom: 0;
-        transform: none;
-    }
-
-    main > section {
-        padding: 3rem 0;
-        height: auto;
-    }
-
-    main > section.home {
-        height: calc(100vh - 85.53px);
-    }
-
-    main > section.projects > div.container {
-        gap: 10rem;
-    }
-
-    main > section.projects > div.container > .box-projects {
-        gap: 8rem;
-    }
-}
-
-@media (max-width: 576px) {
-    :root {
-        font-size: 45%;
-    }
-
+    
     h1 {
         font-size: 4.5rem;
     }
-
+    
     h2 {
         font-size: 3.5rem;
     }
-
+    
     h3 {
         font-size: 2.5rem;
     }
-
-    p, li, a {
-        font-size: 1.4rem;
-    }
-
-    header > nav {
-        padding: 1.5rem 2rem;
-    }
-
-    main > section.home > div.container > div.presentation > p {
-        font-size: 2rem;
-    }
-
     
-    main > section.home > div.social-media{
-        visibility: hidden;
+    p, li, a {
+        font-size: 1.6rem;
     }
-
-    .button {
-        padding: 1.5rem 3rem;
-    }
-
-    footer > div.container {
-        flex-direction: column;
-        gap: 2rem;
+    
+    div.subtitle > h2::after {
+        width: 35%;
     }
 }
 
-@media (max-width: 400px) {
+/* Celulares */
+@media (max-width: 576px) {
     :root {
-        font-size: 45%;
+        font-size: 50%;
     }
 
-    main > section.home > div.container > div.presentation > h1 {
-        text-align: center;
+    div.container {
+        width: 95%;
     }
-
-    main > section.home > div.social-media{
-        visibility: hidden;
+    
+    section {
+        padding: 3rem 0;
     }
-
-    main > section.about div.container > div.additional-information > div.know-me > a.button {
-        align-self: center;
+    
+    div.subtitle > h2::after {
+        width: 50%;
     }
-
-    main > section.projects > div.container > .box-projects > div.project > div.explanation {
-        align-items: center;
-        text-align: center;
-    }
-}   
+}
